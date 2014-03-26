@@ -1,0 +1,30 @@
+[
+	{
+		"id":1,
+		"lot":"Lot1", 
+		"enterprise":"Entreprise1",
+		"location":"Location1",
+		"status":"a_noticed_status"
+	},
+	{
+		"id":3,
+		"lot":"Lot3", 
+		"enterprise":"Entreprise3",
+		"location":"Location3",
+		"status":"b_corrected_status"
+	},
+	{
+		"id":2,
+		"lot":"Lot2", 
+		"enterprise":"Entreprise2",
+		"location":"Location2",
+		"status":"c_validated_status"
+	},
+	{
+		"id":0,
+		"lot":"Lot2", 
+		"enterprise":"Entreprise1",
+		"location":"Location3",
+		"status":"c_validated_status"
+	}
+]

@@ -1,0 +1,36 @@
+img{
+	height:40px;
+}
+
+textarea{
+	background:rgba(255,255,255,0.5);
+	resize:none;
+	height:40px;
+	overflow:hidden;
+	border:0;
+	vertical-align:middle;
+	text-align: center;
+}
+
+.row{
+	line-height:50px;
+	border-style:solid;
+	border-width:1px;
+	text-align: center;
+}
+
+.status, .edit_link{
+	color:white;
+}
+
+.a_noticed_status{
+	background-color:red;
+}
+
+.b_corrected_status{
+	background-color:orange;
+}
+
+.c_validated_status{
+	background-color:green;
+}

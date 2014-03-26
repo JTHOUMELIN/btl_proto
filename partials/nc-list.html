@@ -1,0 +1,28 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-md-1">Trier par:</div>
+        <div class="col-md-1" ng-click="setOrder('id')">Id</div>
+        <div class="col-md-2" ng-click="setOrder('lot')">Lot</div>
+        <div class="col-md-2" ng-click="setOrder('enterprise')">Entreprise</div>
+        <div class="col-md-2" ng-click="setOrder('location')">Location</div>
+        <div class="col-md-3" ng-click="setOrder('status')">Etat</div>
+    </div>
+    <br>
+    <div class="row">
+        <div id="{{nc.id}}" ng-repeat="nc in non_compliances | filter:query | orderBy:orderOp">
+            <div class="col-md-1 status {{nc.status}}">*</div>
+            <div class="col-md-1 status {{nc.status}}">{{nc.id}}</div>
+            <div class="col-md-2 status {{nc.status}}" ng-click="setFilter(nc.lot)">{{nc.lot}}
+            </div>
+            <div class="col-md-2 status {{nc.status}}" ng-click="setFilter(nc.enterprise)">{{nc.enterprise}}</div>
+            <div class="col-md-2 status {{nc.status}}" ng-click="setFilter(nc.location)">{{nc.location}}</div>
+            <div class="col-md-3 status {{nc.status}}" ng-click="setFilter(nc.status)"><img ng-src="{{nc.img}}"></div>
+            <div class="col-md-1 status {{nc.status}}">
+                <a class="edit_link" href="#/non_compliance/{{nc.id}}">Edit</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button id="show_all_nc_button" ng-click="setFilter('')" disabled="disabled">Afficher toutes les non-conformités</button>
+</div>

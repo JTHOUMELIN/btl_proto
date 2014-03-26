@@ -1,0 +1,26 @@
+<div class="container" ng-controller="NcEditCtrl">
+    <br>
+    <div class="row">
+        <div class="col-md-2">N°</div>
+        <div class="col-md-2">Lot</div>
+        <div class="col-md-4">Entreprise</div>
+        <div class="col-md-4">Location</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-2 status {{nc.status}}">{{nc.id}}</div>
+        <div class="col-md-2 status {{nc.status}}">
+            <textarea id="nc_lot">{{nc.lot}}</textarea>
+        </div>
+        <div class="col-md-4 status {{nc.status}}">
+            <textarea id="nc_enterprise">{{nc.enterprise}}</textarea>
+        </div>
+        <div class="col-md-4 status {{nc.status}}">
+            <textarea id="nc_location">{{nc.location}}</textarea>
+        </div>
+	</div>
+    <br>
+    <div class="footer">
+        <a class="footerButton" href="#" ng-click="saveData()">Valider</a>
+    </div>
+</div>
