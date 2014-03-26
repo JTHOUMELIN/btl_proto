@@ -9,9 +9,9 @@ var non_complianceComparator = function(nc1, nc2) {
 // Obtient l'URL de l'image en fonction du statut (notifiée, corrigée ou validée)
 var getImgSrc = function(nc) {
 	switch (nc.status) {
-		// Les status sont précédés de "a", "b" et "c" dans le fichier JSON afin de pouvoir
-		// faire un tri par ordre alphabétique cohérent. On utilise des lettres et non des chiffres
-		// car les noms des status sont utilisés comme classes CSS qui ne peuvent commencer par un chiffre.
+		// Les status sont précédés de "a", "b" et "c" dans le fichier JSON afin de pouvoir faire
+		// un tri par ordre alphabétique cohérent. On utilise des lettres et non des chiffres car les
+		// noms des status sont utilisés comme classes CSS qui ne peuvent commencer par un chiffre.
 		case "a_noticed_status":
 			return "img/u163_normal.JPG";
 		case "b_corrected_status":
